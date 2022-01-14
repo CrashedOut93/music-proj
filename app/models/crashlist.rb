@@ -1,0 +1,2 @@
+class Crashlist < ApplicationRecord
+end

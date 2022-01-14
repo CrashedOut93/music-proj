@@ -1,0 +1,2 @@
+class CrashlistsController < ApplicationController
+end

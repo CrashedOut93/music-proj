@@ -1,0 +1,325 @@
+{
+    "radios":[
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/58039.jpg",
+        "name":"FOX News Radio",
+        "uri":"https://streaming-ent.shoutcast.com/foxnews",
+        "channel_id":58039,
+        "countryCode":"us",
+        "genre":"News,Talk"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/63141.jpg",
+        "name":"KBUE Que Buena 105.5 / 94.3 FM (US Only)",
+        "uri":"https://playerservices.streamtheworld.com/api/livestream-redirect/KBUEFM1AAC_SC",
+        "channel_id":63141,
+        "countryCode":"us",
+        "genre":"Mexican Music"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/3123.jpg",
+        "name":"MSNBC",
+        "uri":"https://wrau.streamguys1.com/msnbc-free",
+        "channel_id":3123,
+        "countryCode":"us",
+        "genre":"News,Talk"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/65950.jpg",
+        "name":"El Bueno, La Mala y El Feo",
+        "uri":"https://live.wostreaming.net/direct/univision-bmfaac-imc2?source=webPIPplayer&us_privacy=1YNN",
+        "channel_id":65950,
+        "countryCode":"us",
+        "genre":"Mexican Music"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/24296.jpg",
+        "name":"WQHT Hot 97 FM",
+        "uri":"https://playerservices.streamtheworld.com/api/livestream-redirect/WQHTFMAAC_SC",
+        "channel_id":24296,
+        "countryCode":"us",
+        "genre":"Hip Hop,R&B"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/11259.jpg",
+        "name":"KLBN La Buena 101.9 FM",
+        "uri":"https://playerservices.streamtheworld.com/api/livestream-redirect/KLBNFMAAC_SC",
+        "channel_id":11259,
+        "countryCode":"us",
+        "genre":"Mexican Music"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/66715.jpg",
+        "name":"Today's Hits Radio",
+        "uri":"https://playerservices.streamtheworld.com/api/livestream-redirect/977_HITS_SC",
+        "channel_id":66715,
+        "countryCode":"us",
+        "genre":"Pop Music,Top 40"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/24177.jpg",
+        "name":"101 SMOOTH JAZZ",
+        "uri":"https://listen.radiocoalition.org/b22139_128mp3",
+        "channel_id":24177,
+        "countryCode":"us",
+        "genre":"Jazz,Smooth Jazz,Easy Listening"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/52425.jpg",
+        "name":"America's Greatest 70s Hits",
+        "uri":"http://hydra.cdnstream.com/1823_128",
+        "channel_id":52425,
+        "countryCode":"us",
+        "genre":"60s,Classic Hits,70s"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/34918.jpg",
+        "name":"America's Country",
+        "uri":"https://ais-sa2.cdnstream1.com/1976_64.aac",
+        "channel_id":34918,
+        "countryCode":"us",
+        "genre":"Country"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/5794.jpg",
+        "name":"KLYY José 97.5 y 107.1",
+        "uri":"https://playerservices.streamtheworld.com/api/livestream-redirect/KLYYFMAAC_SC",
+        "channel_id":5794,
+        "countryCode":"us",
+        "genre":"Adult Contemporary,Latino,Top 40"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/47129.jpg",
+        "name":"Love Songs",
+        "uri":"https://ice55.securenetsystems.net/DASH66",
+        "channel_id":47129,
+        "countryCode":"us",
+        "genre":"Romantic,Pop Music"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/42033.jpg",
+        "name":"NPR : National Public Radio",
+        "uri":"https://npr-ice.streamguys1.com/live.mp3",
+        "channel_id":42033,
+        "countryCode":"us",
+        "genre":"Business,News,Talk"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/35694.jpg",
+        "name":"80s 90s Hits Radio",
+        "uri":"https://usa19.fastcast4u.com/unlimited80s",
+        "channel_id":35694,
+        "countryCode":"us",
+        "genre":"80s,90s,70s"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/47392.jpg",
+        "name":"The Jazz Groove",
+        "uri":"http://199.180.72.2:8015/;",
+        "channel_id":47392,
+        "countryCode":"us",
+        "genre":"Jazz"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/14587.jpg",
+        "name":"Alex Jones - Infowars.com",
+        "uri":"http://streams.infowars.com/alexjonesshow-aac",
+        "channel_id":14587,
+        "countryCode":"us",
+        "genre":"Talk"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/8434.jpg",
+        "name":"Soft Rock Radio",
+        "uri":"https://stream5.thepuremix.net/softrock.mp3",
+        "channel_id":8434,
+        "countryCode":"us",
+        "genre":"80s,Classic Rock,70s"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/65010.jpg",
+        "name":"Dash Hip hop X",
+        "uri":"https://ice55.securenetsystems.net/DASH90",
+        "channel_id":65010,
+        "countryCode":"us",
+        "genre":"Hip Hop"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/72719.jpg",
+        "name":"Oldies America",
+        "uri":"http://wallyjradio.com:8000/OldiesAmerica",
+        "channel_id":72719,
+        "countryCode":"us",
+        "genre":"60s,Oldies,70s"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/39286.jpg",
+        "name":"Chilltrax",
+        "uri":"http://port80.chilltrax.com/;listen.mp3",
+        "channel_id":39286,
+        "countryCode":"us",
+        "genre":"Lounge,Chillout,Electronic"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/44809.jpg",
+        "name":"60's",
+        "uri":"https://ice55.securenetsystems.net/DASH34",
+        "channel_id":44809,
+        "countryCode":"us",
+        "genre":"60s,Oldies"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/51388.jpg",
+        "name":"The RnB Channel",
+        "uri":"http://192.99.8.192:3132/stream",
+        "channel_id":51388,
+        "countryCode":"us",
+        "genre":"R&B"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/62198.jpg",
+        "name":"KSCA 101.9 Los Angeles FM (US Only)",
+        "uri":"https://live.wostreaming.net/direct/univision-kscafmaac-imc2",
+        "channel_id":62198,
+        "countryCode":"us",
+        "genre":"Mexican Music"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/11258.jpg",
+        "name":"El Show de Piolín",
+        "uri":"https://playerservices.streamtheworld.com/api/livestream-redirect/PIOLINAAC_SC",
+        "channel_id":11258,
+        "countryCode":"us",
+        "genre":"Comedy"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/48989.jpg",
+        "name":"La Guasanga Online",
+        "uri":"https://usa19.fastcast4u.com/laguasanga",
+        "channel_id":48989,
+        "countryCode":"us",
+        "genre":"Latino"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/47798.jpg",
+        "name":"80's",
+        "uri":"https://ice55.securenetsystems.net/DASH7",
+        "channel_id":47798,
+        "countryCode":"us",
+        "genre":"80s,Oldies"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/73213.jpg",
+        "name":"WFSX-FM 92.5 Fox News (US Only)",
+        "uri":"https://playerservices.streamtheworld.com/api/livestream-redirect/WFSXFMAAC_SC?pname=tdwidgets&dist=triton-widget",
+        "channel_id":73213,
+        "countryCode":"us",
+        "genre":"News,Talk"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/25536.jpg",
+        "name":"70's",
+        "uri":"https://ice55.securenetsystems.net/DASH26",
+        "channel_id":25536,
+        "countryCode":"us",
+        "genre":"Oldies,70s"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/57219.jpg",
+        "name":"Miami Beach Radio",
+        "uri":"https://streaming.radiostreamlive.com/miamibeachradio_devices",
+        "channel_id":57219,
+        "countryCode":"us",
+        "genre":"Hot AC,House,Top 40"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/60739.jpg",
+        "name":"Radio Rock On",
+        "uri":"https://streaming.radiostreamlive.com/radiorockon_devices",
+        "channel_id":60739,
+        "countryCode":"us",
+        "genre":"Blues,Classic Rock,Rock"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/63681.jpg",
+        "name":"WBAP News / Talk 820 AM and 96.7 FM",
+        "uri":"https://playerservices.streamtheworld.com/api/livestream-redirect/WBAPAMAAC_SC?pname=TDSdk&dist=tg",
+        "channel_id":63681,
+        "countryCode":"us",
+        "genre":"News,Talk"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/29555.jpg",
+        "name":"GotRadio - Classic Country",
+        "uri":"http://206.217.213.236:8090/",
+        "channel_id":29555,
+        "countryCode":"us",
+        "genre":"Classic Country"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/50785.jpg",
+        "name":"WNYC 93.9",
+        "uri":"http://wnycfm.streamguys.com:80/wnycfm.aac",
+        "channel_id":50785,
+        "countryCode":"us",
+        "genre":"News,Public,Talk"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/56569.jpg",
+        "name":"Radio New York Live",
+        "uri":"https://streaming.radiostreamlive.com/radionylive_devices",
+        "channel_id":56569,
+        "countryCode":"us",
+        "genre":"80s,90s,Top 40"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/72005.jpg",
+        "name":"Cool Oldies",
+        "uri":"http://c8.radioboss.fm:8114/stream",
+        "channel_id":72005,
+        "countryCode":"us",
+        "genre":"60s,Classic Hits,Oldies"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/15265.jpg",
+        "name":"KLTN Qué Buena 102.9 FM (US Only)",
+        "uri":"https://live.wostreaming.net/direct/univision-kltnfmaac-imc1?source=webPIPplayer&us_privacy=1YNN",
+        "channel_id":15265,
+        "countryCode":"us",
+        "genre":"Latino,Mexican Music,Regional"
+    },
+    {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/63774.jpg",
+        "name":"San Francisco's 70's Hits",
+        "uri":"http://s6.voscast.com:10922/;stream.mp3",
+        "channel_id":63774,
+        "countryCode":"us",
+        "genre":"70s"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
