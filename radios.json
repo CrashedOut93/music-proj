@@ -25,6 +25,14 @@
         "genre":"News,Talk"
     },
     {
+        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/37011.jpg",
+        "name":"The Big 80s Station",
+        "uri":"http://s5.nexuscast.com:8065/;",
+        "channel_id":37011,
+        "countryCode":"us",
+        "genre":"80s"
+    },
+    {
         "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/65950.jpg",
         "name":"El Bueno, La Mala y El Feo",
         "uri":"https://live.wostreaming.net/direct/univision-bmfaac-imc2?source=webPIPplayer&us_privacy=1YNN",

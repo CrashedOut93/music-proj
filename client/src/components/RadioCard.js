@@ -1,23 +1,19 @@
 import {useState} from 'react'
 
-function RadioCard({radioObj:{img, name, uri, channel_id, countryCode, genre}}) {
+function RadioCard({radio:{img, name, uri, channel_id, countryCode, genre}, radio, onRadioClick}) {
     const [like, setLike] = useState(false)
-        const handleClick = () => {
-            setLike(!like)
-        }
-        
-    // const buildRadio = () => {        
-    //     setChosenRadio(<Radio
-    //     img = {img}
-    //     name = {name}
-    //     uri = {uri}
-    //     channel_id = {channel_id}
-    //     countryCode = {countryCode}
-    //     genre = {genre}
-    // />)
+    // function handleClick(){
+    //         onRadioClick(radio)
     // }
+    const handleClickHeart = () => {
+        setLike(!like)
+        onRadioClick(radio)
+    }
 
-    return (
+
+    
+    
+        return (
         <div className="RadioCard">
         <img src={img} alt="radio-station"/>
         <p>{name}</p>
@@ -28,9 +24,7 @@ function RadioCard({radioObj:{img, name, uri, channel_id, countryCode, genre}}) 
         <p>{channel_id}</p>
         <p>{countryCode}</p>
         <p>{genre}</p>
-        <p onClick={handleClick}>{like?'♥':'♡'}</p>
-
-            
+        <button onClick={() => handleClickHeart(radio)}>{like?'♥':'♡'}</button>
         </div>
     )
 }

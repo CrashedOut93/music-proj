@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "Seeding Data"
-Radio.destroy_all
-User.destroy_all
+# Radio.destroy_all
+# User.destroy_all
 
 all_radios = JSON.parse(File.read(Rails.root.join('./radios.json')))['radios']
 
