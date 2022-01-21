@@ -1,9 +1,10 @@
 import {useState, useEffect} from 'react'
 import Player from './components/Player'
 import RadioContainer from './components/RadioContainer';
-import { BrowserRouter as Router, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {useNavigate} from 'react-router'
 import FavStation from './components/FavStation';
+import VideoPlayer from './components/VideoPlayer';
 
 
 function Home({ setCurrentUser, currentUser }) {
@@ -111,7 +112,9 @@ useEffect (() => {
 
 
 return (
+
     <div className="Home">
+
     <RadioContainer radioList={radioList} radioToAdd={handleAddRadio}/> 
     <FavStation radioList={favorites} onRemoveRadio={handleRemoveRadio}/>
     <Player 
@@ -121,6 +124,7 @@ return (
     songs={songs}/>
     
     </div>
+
 );
 }
 export default Home;

@@ -1,9 +1,12 @@
 import {useState, useEffect} from 'react'
-import { BrowserRouter as Router, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 // import LoggedIn from './LoggedIn'
 import LoggedOut from './LoggedOut'
 import Home from './Home'
 import LoggedIn from './components/LoggedIn'
+import VideoPlayer from './components/VideoPlayer';
+import ErrorPage from './components/ErrorPage';
+
 
 
 
@@ -35,8 +38,14 @@ function App () {
   return (
     <div className="App">
     <Router>
+    
     {currentUser ? (
+      
       <div>
+      <nav>
+      <Link to='/'>Home</Link>
+      <Link to='/VideoPlayer'>VideoPlayer</Link>
+    </nav>
       <LoggedIn
             setCurrentUser={setCurrentUser}
             currentUser={currentUser}
@@ -45,7 +54,12 @@ function App () {
       setCurrentUser={setCurrentUser}
       currentUser={currentUser}
       />
+      <Routes>
+      <Route path='/VideoPlayer' element={<VideoPlayer />} />
+      <Route path='*' element={<ErrorPage />} />
+      </Routes>
       </div>
+
     ) : (
       <LoggedOut setCurrentUser={setCurrentUser}/>
     )}
