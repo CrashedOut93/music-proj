@@ -112,9 +112,9 @@ useEffect (() => {
 
 
 return (
-
+    
     <div className="Home">
-
+    Welcome {currentUser.username}!
     <RadioContainer radioList={radioList} radioToAdd={handleAddRadio}/> 
     <FavStation radioList={favorites} onRemoveRadio={handleRemoveRadio}/>
     <Player 

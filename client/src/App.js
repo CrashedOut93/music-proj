@@ -1,11 +1,11 @@
 import {useState, useEffect} from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-// import LoggedIn from './LoggedIn'
 import LoggedOut from './LoggedOut'
 import Home from './Home'
 import LoggedIn from './components/LoggedIn'
 import VideoPlayer from './components/VideoPlayer';
 import ErrorPage from './components/ErrorPage';
+import NavBar from './components/NavBar';
 
 
 
@@ -34,28 +34,29 @@ function App () {
     return <div></div>;
   }
 
+  const handleLogout = () => {
+    setCurrentUser(null);
+    fetch("/logout", { method: "DELETE" });
+    };
+
 
   return (
+
     <div className="App">
     <Router>
     
     {currentUser ? (
       
       <div>
-      <nav>
+    
       <Link to='/'>Home</Link>
-      <Link to='/VideoPlayer'>VideoPlayer</Link>
-    </nav>
-      <LoggedIn
-            setCurrentUser={setCurrentUser}
-            currentUser={currentUser}
-          />
-      <Home
-      setCurrentUser={setCurrentUser}
-      currentUser={currentUser}
-      />
+      <Link to='/videoplayer'>Artist To Watch</Link>
+      <button onClick={handleLogout}>Logout</button>
+      
       <Routes>
-      <Route path='/VideoPlayer' element={<VideoPlayer />} />
+      <Route path='/videoplayer' element={<VideoPlayer />} />
+      <Route path='/' element={<Home setCurrentUser={setCurrentUser}
+      currentUser={currentUser} />} />
       <Route path='*' element={<ErrorPage />} />
       </Routes>
       </div>

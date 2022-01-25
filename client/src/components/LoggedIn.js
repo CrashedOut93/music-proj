@@ -5,7 +5,6 @@ function LoggedIn({ setCurrentUser, currentUser }) {
     };
     return (
     <div>
-        Welcome {currentUser.username}!
         <p>
         <button onClick={handleLogout}>Logout</button>
         </p>
