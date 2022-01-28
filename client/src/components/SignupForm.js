@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+
 function SignupForm({ setCurrentUser }) {
+
+
 const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -27,6 +30,7 @@ const handleSubmit = (e) => {
     if (resp.ok) {
         resp.json().then((user) => {
         console.log(user);
+
         setCurrentUser(user);
         });
     } else {
@@ -67,7 +71,7 @@ return (
             onChange={(e) => handleChange(e)}
         />
         </p>
-        <p>
+        <p>      
         <button type="submit">Sign Up</button>
         </p>
         <p>Have an account?</p>

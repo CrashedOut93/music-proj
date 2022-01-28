@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoggedOut from './LoggedOut'
 import Home from './Home'
 import LoggedIn from './components/LoggedIn'
@@ -48,10 +48,8 @@ function App () {
     {currentUser ? (
       
       <div>
+      
     
-      <Link to='/'>Home</Link>
-      <Link to='/videoplayer'>Artist To Watch</Link>
-      <button onClick={handleLogout}>Logout</button>
       
       <Routes>
       <Route path='/videoplayer' element={<VideoPlayer />} />

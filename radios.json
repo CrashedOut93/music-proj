@@ -185,14 +185,6 @@
         "genre":"R&B"
     },
     {
-        "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/62198.jpg",
-        "name":"KSCA 101.9 Los Angeles FM (US Only)",
-        "uri":"https://live.wostreaming.net/direct/univision-kscafmaac-imc2",
-        "channel_id":62198,
-        "countryCode":"us",
-        "genre":"Mexican Music"
-    },
-    {
         "image_url":"https://mypromotions.sfo2.cdn.digitaloceanspaces.com/radios/11258.jpg",
         "name":"El Show de Piolín",
         "uri":"https://playerservices.streamtheworld.com/api/livestream-redirect/PIOLINAAC_SC",

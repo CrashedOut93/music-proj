@@ -1,4 +1,4 @@
-import React, { useState, useRef }from 'react';
+import React, { useState, useEffect,  useRef }from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -10,6 +10,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import NavBar from './NavBar' 
 import screenfull from 'screenfull';
+import RingLoader from "react-spinners/RingLoader";
 
 
 const useStyles = makeStyles({
@@ -37,6 +38,7 @@ const format = (seconds) => {
 let count = 0
 
 function VideoPlayer() {
+    const [loading, setLoading] = useState(false);
     const classes = useStyles();
     const [timeDisplayFormat, setTimeDisplayFormat] = useState("normal")
     const [bookmarks, setBookmarks] = useState([])
@@ -160,12 +162,31 @@ function VideoPlayer() {
         :
         `-${format(duration  - currentTime)}`
         const totalDuration = format(duration)
+
+        useEffect(() => {
+            setLoading(true)
+            setTimeout(() => {
+            setLoading(false)
+            }, 8000)
+        },[])
     return ( 
     <>
+    {
+        loading ? 
+<div>
+        <RingLoader 
+                color={'#261CF8'} 
+                loading={loading} 
+                size={60}
+                />
+                </div>
+    
+                :
+    <div>
     <NavBar />
     <AppBar position="relative">
         <Toolbar>
-            <Typography variant="h6">Artist To Watch</Typography>
+            <Typography variant="h6">CHIBI LoyaltyOverLove @iamychibi</Typography>
         </Toolbar>
     </AppBar>
     <Toolbar />
@@ -226,8 +247,14 @@ function VideoPlayer() {
                 </Grid>
                 <canvas ref={canvasRef} />
         </Container>
+        </div>
+    }
+
+    
+                    
     </>
     );
+    
 }
 
 export default VideoPlayer;

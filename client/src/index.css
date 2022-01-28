@@ -6,20 +6,31 @@
 }
 
 body{
-  background-color: rgb(20, 137, 247)
+  background: url("./images/Music5.jpeg") no-repeat center center fixed;
+  position: relative;
+  margin-top: 0;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 0px 0px 16px 16px;
 }
+
 
 .App{
   display:flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  /* background-color: rgb(20, 137, 247); */
+  /* background-image: url('./images/bgpic.PNG'); */
+  
 } 
 
 .c-player {
   display: block;
-  background-color:rgb(107, 187, 253);
+  background-color:#5683eb;
   padding: 50px;
+  width: 400px;
   border-radius: 18px;
   box-shadow: inset -6px -6px 12px rgba(0,0,0,0.8), inset 6px 6px 12px rgba(255, 254, 254, 0.4)
 }
@@ -102,4 +113,167 @@ body{
   cursor: pointer;
   color:cyan;
   font-style: 18px;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #5683eb;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+.sidenav {
+  height: 10%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+
+/* Side navigation links */
+.sidenav-a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav-a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+
+.allRadios {
+  height: 900px;
+  width: 350px;
+  font-weight: 900;
+  z-index: 1;
+  margin-right: 200px;
+  /* background: #4CAF50; */
+  overflow: scroll;
+  border: 1px solid rgb(184, 68, 68);
+  padding: 15px;
+  background: url("./images/Music6.jpeg");
+  box-shadow: 6px 6px 12px rgba(0,0,0,0.8), -6px -6px 12px rgba(255, 254, 254, 0.4)
+}
+
+.radioName{
+  font-size: large;
+  text-decoration: double;
+  box-sizing: content-box;
+  color: rgb(195, 208, 252);
+  
+}
+
+.FavSta{
+  height: 900px;
+  width: 250px;
+  font-weight: 900;
+  z-index: 1;
+  top: 0;
+  left: 3;
+  margin-left: 200px;
+  background: url("./images/Music4.jpeg");
+  overflow: scroll;
+  padding: 15px;
+  box-shadow: 6px 6px 12px rgba(0,0,0,0.8), -6px -6px 12px rgba(255, 254, 254, 0.4)
+}
+
+.radioImage{
+  width: auto;
+  height: auto;
+}
+
+.loginpage{
+  font-size: large;
+  text-decoration: double;
+  box-sizing: content-box;
+  color: rgb(0, 0, 0);
+}
+
+.playful-span {
+  color: #000000;
+  text-shadow: textShadow(0.25, 6, #E485F8);
+  position: relative;
+  animation: scatter 1.75s infinite;
+  font-size: large;
+  text-decoration: double;
+  box-sizing: content-box;
+  
+}
+
+.playful-span:nth-child(2n) {
+  color: #ED625C;
+  text-shadow: textShadow(0.25, 6, #F2A063);
+  animation-delay: 0.3s;
+}
+
+.favName{
+  color: #fffcd2;
+  text-shadow: textShadow(0.25, 6, #E485F8);
+  position: relative;
+  animation: scatter 1.75s infinite;
+  font-size: large;
+  text-decoration: double;
+  box-sizing: content-box;
+}
+.radioName{
+  color: #98b8ff;
+  text-shadow: textShadow(0.25, 6, #E485F8);
+  position: relative;
+  animation: scatter 1.75s infinite;
+  font-size: large;
+  text-decoration: double;
+  box-sizing: content-box;
 }

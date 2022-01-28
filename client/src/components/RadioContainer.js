@@ -9,8 +9,10 @@ function RadioContainer({radioList, radioToAdd}) {
     <RadioCard key={radio.id} radio={radio} onRadioClick={radioToAdd} />
     ))
     return (
-        <div>
-        <h2>Radio Stations</h2>
+        <div className="allRadios" font-weight='900'>
+        <div className="radioName">
+        <h1>Radio Stations</h1>
+        </div>
         {allRadioList}
         {/*radioList.map(radio => <RadioCard radioObj={radio} key={radio.name}/>)*/} 
         </div>

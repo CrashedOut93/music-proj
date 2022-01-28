@@ -6,15 +6,21 @@ FaHome as FaHomeIcon,
 FaCode as FaCodeIcon
 } from 'react-icons/fa';
 
-const NavBar = () => {
+// const handleLogout = () => {
+//     setCurrentUser(null);
+//     fetch("/logout", { method: "DELETE" });
+//     };
+
+const NavBar = ({ currentUser, handleLogout }) => {
 return (
-    <Navbar style={{background: '#09070d'}}>
-    <Navbar.Brand style={{ color: 'white'}}>
-    Flatiron Hub
+    <Navbar className="NavBar" style={{background: '#5683eb'}}>
+    <Navbar.Brand style={{ color: 'black'}}>
+        Welcome {currentUser} 🎶 🎹 🎧 <button onClick={handleLogout} box-shadow='6px 6px 12px rgba(0,0,0,0.8), -6px -6px 12px rgba(255, 254, 254, 0.4)' color="black" fontSize="large" position="left">Logout</button>
     </Navbar.Brand>
     <Nav>
-        <Nav.Item as={NavLink} to="/" icon={<FaHomeIcon />} size="2em" style={{ color: '#61dafb'}}>Home</Nav.Item>
-    <Nav.Item as={NavLink} to="/VideoPlayer" style={{ color: 'white'}}>Chat</Nav.Item>
+        <Nav.Item as={NavLink} to="/" icon={<FaHomeIcon />} size="2em" style={{ color: '#010000'}}>Home</Nav.Item>
+    <Nav.Item as={NavLink} to="/videoplayer" style={{ color: '#010000'}}>Artist To Watch</Nav.Item>
+
     
     </Nav>
 
@@ -23,3 +29,6 @@ return (
 }
 
 export default NavBar;
+
+
+

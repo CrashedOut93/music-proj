@@ -1,15 +1,17 @@
 import {useState, useEffect} from 'react'
 import Player from './components/Player'
 import RadioContainer from './components/RadioContainer';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {useNavigate} from 'react-router'
 import FavStation from './components/FavStation';
 import VideoPlayer from './components/VideoPlayer';
+import  NavBar from './components/NavBar';
+import RingLoader from "react-spinners/RingLoader";
 
 
 function Home({ setCurrentUser, currentUser }) {
     const navigate = useNavigate();
-const [songs] = useState([
+    const [loading, setLoading] = useState(false);
+    const [songs] = useState([
     {
     title: "Affairs",
     artist: "CrashedOut",
@@ -109,21 +111,63 @@ useEffect (() => {
     .then(data => setRadioList(data))
 },[])
 
+useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+    setLoading(false)
+    }, 4000)
+},[])
 
 
 return (
+    <>
+    {
+        loading ?
+
+            <RingLoader 
+                color={'#261CF8'} 
+                loading={loading} 
+                size={60}
+                
+                />
+            :
+            
+            <div className="grid-container">
+            
+            <div className="header">
+            <div className="playful-span">
+            <h1>Music Haven</h1>
+            </div>
+        <NavBar handleLogout={handleLogout} currentUser={currentUser.username}/>
     
-    <div className="Home">
-    Welcome {currentUser.username}!
-    <RadioContainer radioList={radioList} radioToAdd={handleAddRadio}/> 
-    <FavStation radioList={favorites} onRemoveRadio={handleRemoveRadio}/>
-    <Player 
-    currentSongIndex={currentSongIndex}
-    setCurrentSongIndex={setCurrentSongIndex} 
-    nextSongIndex={nextSongIndex}
-    songs={songs}/>
+            </div>
+            
+
+            <div className="left"  color= "#eb03fc">
+        <RadioContainer radioList={radioList} radioToAdd={handleAddRadio}/> 
+            </div>
+
+            <div className="right" color= "#eb03fc">    
+        <FavStation radioList={favorites} onRemoveRadio={handleRemoveRadio}/>
+            </div>    
+        
+            <div className="middle">
+        <Player 
+            currentSongIndex={currentSongIndex} 
+            setCurrentSongIndex={setCurrentSongIndex} 
+            nextSongIndex={nextSongIndex} 
+            songs={songs}
+            />
+            </div>
+            </div>
+    }
+
+
+
     
-    </div>
+    
+    </>
+
 
 );
 }
