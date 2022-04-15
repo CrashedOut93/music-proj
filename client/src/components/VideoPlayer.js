@@ -171,17 +171,7 @@ function VideoPlayer() {
         },[])
     return ( 
     <>
-    {
-        loading ? 
-<div>
-        <RingLoader 
-                color={'#261CF8'} 
-                loading={loading} 
-                size={60}
-                />
-                </div>
     
-                :
     <div>
     <NavBar />
     <AppBar position="relative">
@@ -248,7 +238,7 @@ function VideoPlayer() {
                 <canvas ref={canvasRef} />
         </Container>
         </div>
-    }
+    
 
     
                     

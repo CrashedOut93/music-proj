@@ -21,7 +21,7 @@ function Home({ setCurrentUser, currentUser }) {
     {
     title: "Faded",
     artist: "CrashedOut",
-    img_src: "./images/CO1.PNG",
+    img_src: "./images/CO2.PNG",
     src: "./music/Faded.mp3"
     },
     {

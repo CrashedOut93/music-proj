@@ -202,7 +202,7 @@ body{
   margin-right: 200px;
   /* background: #4CAF50; */
   overflow: scroll;
-  border: 1px solid rgb(184, 68, 68);
+  border: 1px solid rgb(21, 109, 241);
   padding: 15px;
   background: url("./images/Music6.jpeg");
   box-shadow: 6px 6px 12px rgba(0,0,0,0.8), -6px -6px 12px rgba(255, 254, 254, 0.4)
@@ -223,9 +223,10 @@ body{
   z-index: 1;
   top: 0;
   left: 3;
-  margin-left: 200px;
+  margin-left: 190px;
   background: url("./images/Music4.jpeg");
   overflow: scroll;
+  border: 1px solid rgb(237, 241, 21);
   padding: 15px;
   box-shadow: 6px 6px 12px rgba(0,0,0,0.8), -6px -6px 12px rgba(255, 254, 254, 0.4)
 }
